@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-
+    // config params
     [SerializeField] AudioClip breakSound;
 
-    Level level; //cahced reference
+    //cahced reference
+    Level level;
+    GameStatus gameStatus;
 
     private void Start()
     {
      level = FindObjectOfType<Level>();
 
         level.CountBreakableBlocks();
+       gameStatus = FindObjectOfType<GameStatus>();
     }
 
 
@@ -28,5 +31,7 @@ public class Block : MonoBehaviour
         AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
         Destroy(gameObject, 0.0f);
         level.BlockDestroyed();
+        gameStatus.AddToScore();
+        
     }
 }
