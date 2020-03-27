@@ -3064,6 +3064,11 @@ PrefabInstance:
       propertyPath: gameSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 538818336306785265, guid: 2e6f89de24a5c5e4cb0bc0a8a7a0b292,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1161569804}
     - target: {fileID: 632734150772143416, guid: 2e6f89de24a5c5e4cb0bc0a8a7a0b292,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3132,6 +3137,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1410742118}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1161569804 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1182359807, guid: 0c3cb4b5fb23e9c45b30e305ae63b2b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3442269868611230952}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1178059259
 PrefabInstance:
   m_ObjectHideFlags: 0
